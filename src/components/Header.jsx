@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-export const Header = () => {
+const Header = () => {
   return (
     <header>
       <div>
@@ -16,7 +16,9 @@ export const Header = () => {
           </li>
         </ul>
       </nav>
-      <a href="https://learnnation.com.ng">Learning Portal</a>
+      <a href="https://learnnation.com.ng/login/index.php">Learning Portal</a>
     </header>
   )
 }
+
+export default Header
