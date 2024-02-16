@@ -2,10 +2,10 @@ import { Link } from "react-router-dom"
 
 const ErrorPage = () => {
     return (
-        <article style={{ padding: "100px" }}>
+        <article>
             <h1>Oops!</h1>
             <p>Page Not Found</p>
-            <div className="flexGrow">
+            <div>
                 <Link to="/">Visit Our Homepage</Link>
             </div>
         </article>
