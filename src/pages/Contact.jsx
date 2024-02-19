@@ -1,10 +1,11 @@
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import ContactBody from "../components/ContactBody";
 
 const Contact = () => {
 
   return (
-    <section>
-      <h1>Contact</h1>
+    <section className="">
+        <ContactBody/>
     </section>
   );
 };
