@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink  } from "react-router-dom";
 import LOGO from "../assets/imgs/learnnation-logo.svg";
 import { FiMenu, FiX } from "react-icons/fi"; 
 
@@ -41,18 +41,18 @@ const Header = () => {
           {/* Main Navigation (Hidden on smaller screens) */}
           <nav className="hidden md:block"> 
             <ul className="md:flex items-center gap-x-8 lg:gap-x-10">
-              <Link
+              <NavLink
                 to="/about"
-                className="font-medium text-base lg:text-xl whitespace-nowrap"
+                className={({ isActive }) => isActive ? "font-medium text-base lg:text-xl whitespace-nowrap text-royal-blue" : "font-medium text-base lg:text-xl whitespace-nowrap"}
               >
                 About Us
-              </Link>
-              <Link
+              </NavLink>
+              <NavLink
                 to="/contact"
-                className="font-medium text-base lg:text-xl whitespace-nowrap"
+                className={({ isActive }) => isActive ? "font-medium text-base lg:text-xl whitespace-nowrap text-royal-blue" : "font-medium text-base lg:text-xl whitespace-nowrap"}
               >
                 Contact Us
-              </Link>
+              </NavLink>
               <li>
                 <a
                   href="https://learnnation.com.ng/course/"
@@ -76,18 +76,20 @@ const Header = () => {
         {isMenuOpen && (
             <nav className="w-full bg-light-blue py-4 z-10"> 
               <ul className="flex flex-col gap-y-4 items-end">
-                <Link
+                <NavLink
                   to="/about"
-                  className="font-medium text-base lg:text-xl whitespace-nowrap"
+                  onClick={() => setIsMenuOpen(!isMenuOpen)}
+                  className={({ isActive }) => isActive ? "font-medium text-base lg:text-xl whitespace-nowrap text-royal-blue" : "font-medium text-base lg:text-xl whitespace-nowrap"}
                 >
                   About Us
-                </Link>
-                <Link
+                </NavLink>
+                <NavLink
                   to="/contact"
-                  className="font-medium text-base lg:text-xl whitespace-nowrap"
+                  onClick={() => setIsMenuOpen(!isMenuOpen)}
+                  className={({ isActive }) => isActive ? "font-medium text-base lg:text-xl whitespace-nowrap text-royal-blue" : "font-medium text-base lg:text-xl whitespace-nowrap"}
                 >
                   Contact Us
-                </Link>
+                </NavLink>
                 <li>
                   <a
                     href="https://learnnation.com.ng/course/"
