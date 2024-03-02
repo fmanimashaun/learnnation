@@ -47,15 +47,18 @@ const Header = () => {
               >
                 About Us
               </NavLink>
-              <NavLink
-                to="/contact"
-                className={({ isActive }) => isActive ? "font-medium text-base lg:text-xl whitespace-nowrap text-royal-blue" : "font-medium text-base lg:text-xl whitespace-nowrap"}
-              >
-                Contact Us
-              </NavLink>
               <li>
                 <a
-                  href="https://learnnation.com.ng/course/"
+                  href="https://portal.learnnation.com.ng/?home=p1"
+                  className="font-medium text-base lg:text-xl whitespace-nowrap"
+                  target="_blank" rel="noreferrer"
+                >
+                  Contacts
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://portal.learnnation.com.ng/course/"
                   className="font-medium text-base lg:text-xl whitespace-nowrap"
                   target="_blank" rel="noreferrer"
                 >
@@ -63,7 +66,7 @@ const Header = () => {
                 </a>
               </li>
               <a
-                href="https://learnnation.com.ng/login/index.php"
+                href="https://portal.learnnation.com.ng/login/index.php"
                 className="bg-royal-blue text-white px-4 py-3 rounded-xl font-medium text-base lg:text-xl whitespace-nowrap"
                 target="_blank" rel="noreferrer"
               >
