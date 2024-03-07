@@ -3,15 +3,14 @@ import HeroImg from "../assets/imgs/hero-img.png";
 
 const Hero = () => {
   return (
-    <div className="bg-light-blue pt-8 pb-8 flex md:px-8">
+    <div className="bg-light-blue px-3.5 pt-8 pb-32 mb-12 flex-col md:px-8 relative">
       <div className="container mx-auto flex flex-col sm:flex-row gap-8 md:gap-16 items-center justify-between">
-        <div className="w-full md:w-1/2">
-          <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold text-black mb-8">
-            Welcome to <br />
-            <span className="text-royal-blue">Learn Nation</span>
+        <div className="w-full custom:w-7/12">
+          <h1 className="text-7xl font-medium text-black mb-8">
+            Welcome to <span className="text-royal-blue">Learn Nation</span>
           </h1>
           <div>
-            <p className="text-base lg:text-xl text-light-gray mt-4">
+            <p className="hero-text text-charcoal-black mt-4">
               Unlock limitless potential through our state-of-the-art e-learning
               portal! Embark on a transformative journey of growth with courses
               curated by industry luminaries. Enroll today to elevate your
@@ -40,7 +39,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="w-full md:w-1/2">
+        <div className="hidden custom:block custom:w-5/12">
           <img
             src={HeroImg}
             alt="a lady carrying a book"
@@ -48,6 +47,9 @@ const Hero = () => {
           />
         </div>
       </div>
+      <p className="absolute -bottom-10 py-6 px-16  text-5xl font-bold shadow-lg rounded-3xl left-1/2 transform -translate-x-1/2 text-center bg-white whitespace-nowrap">
+        TRUSTED BY 1000+ PROFESSIONALS NATION WIDE
+      </p>
     </div>
   );
 };
