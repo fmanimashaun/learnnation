@@ -21,11 +21,22 @@ export default {
         'charcoal-black': '#0F0F0F',
         'light-gray': '#474646',
       },
+      Keyframes: {
+        'opem-menu': {
+          '0%': {transform : 'scaleY(0)'}, 
+          '80%': {transform : 'scaleY(1.2)'}, 
+          '100%': {transform : 'scaleY(1)'}, 
+        },
+      },
+      animation:{
+        'open-menu' : 'opem-menu 0.5s ease-in-out forwards',
+      },
     },
   },
   variants: {
     extend: {},
   },
   plugins: [],
+  darkMode: 'class',
 }
 

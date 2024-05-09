@@ -1,0 +1,29 @@
+.radial-blue{
+    background: radial-gradient(lightyellow,skyblue);
+}
+
+.hh{
+    border: 2px solid tomato;
+}
+.bb{
+    border: 2px solid rgb(71, 120, 255);
+    display: flex;
+    align-items: center;
+}
+body{
+    height: 2000px;
+}
+.btn{
+    width: 500px;
+}
+.w-24{
+    width: 24%;
+}
+
+@media (max-width:640px)  {
+    .discover{
+        font-size: 20px;
+        line-height: 20px;
+    }
+   
+}

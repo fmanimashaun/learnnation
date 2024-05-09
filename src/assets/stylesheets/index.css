@@ -39,3 +39,104 @@ body {
   font-weight: 400;
   line-height: 1.2;
 }
+
+
+/* about us styles starts here  */
+.aboutus-first-section{
+  /* border: 2px solid black ; */
+  /* height: 854px; */
+  display: flex;
+  padding: 30px 30px 0 30px;
+}
+.aboutus-first-section .left{
+  /* border: 2px solid rgb(230, 29, 29) ; */
+  height: 587px;
+  width: 701.23px;
+  /* display: flex; */
+}
+.aboutus-first-section .right{
+  /* border: 2px solid black ; */
+  height: 587px;
+  width: 701.23px;
+  /* display: flex; */
+}
+.topimgcon{
+  display: flex;
+  justify-content: center;
+}
+.scale1{
+  width: 300.23;
+  height: 300.54px;
+  transform: rotate(10deg);
+ 
+}
+.scale2{
+  width: 280.34px;
+  height: 280.21px;
+  
+}
+.scale3{
+  width: 290.48px;
+  height: 290.66px;
+  transform: translateY(-85px) translateX(20px);
+}
+.dedicate{
+  line-height:90px ;
+  font-size: 80px;
+}
+.discover{
+  margin-bottom: 30px;
+}
+.cardcon{
+  border:  2px solid black;
+  height: 123px;
+  width: 97%;
+  margin: auto;
+}
+
+.aboutus-second-section{
+  height: 1562px;
+  /* border: 2px solid blue; */
+  padding: 30px 30px 0 30px;
+
+
+}
+.welcomecon{
+  /* height: 300px; */
+  /* border: 2px solid black; */
+  display: flex;
+}
+.welcome{
+  height: 500px;
+  /* border: 2px solid tomato; */
+  width: 50%;
+}
+.welcomepix{
+  height: 500px;
+  /* border: 2px solid tomato; */
+  width: 50%;
+}
+.welcomeP{
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 700;
+}
+.who-we-are{
+  font-size: 22px;
+  font-weight: 700;
+  color: blueviolet;
+}
+.standPix{
+  Width:575px;
+  Height:400px;
+  margin-top: 90px;
+}
+
+
+
+
+
+
+
+
+/* about us styles ends here  */

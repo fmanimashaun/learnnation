@@ -1,0 +1,50 @@
+.hh{
+    border: 2px solid red;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+.mobileLinkHolderCon{
+    position: absolute;
+    top: 40px;
+    right: 0;
+}
+.mobileLinkHolder{
+    background: rgb(15 118 110);
+    position: absolute;
+    right: 0;
+    top: 15px;
+    display: flex;
+    flex-direction: column;
+    font-size: 36px;
+    padding: 30px;
+    text-align: center;
+    height: 100vh;
+    gap: 30px;
+}
+.hide{
+    display: none;
+}
+
+@-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
